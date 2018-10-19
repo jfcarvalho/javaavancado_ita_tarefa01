@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author nessk
  */
-@WebServlet(urlPatterns = {"/CelsiusFahrenheit"})
+@WebServlet("/CF")
 public class CelsiusFahrenheit extends HttpServlet {
 
     /**
@@ -57,7 +57,28 @@ public class CelsiusFahrenheit extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        String option = request.getParameter("op");
+        float temp = Float.parseFloat(request.getParameter("temp"));
+        float resultado = 0;
+        
+        switch(option)
+        {
+            case "cf":
+                //Converter de Celcius para Fahrenheit
+                resultado = ((temp * 9) / 5) + 32;
+            break;
+            
+            case "fc":
+                //Converter de Fahrenheit para Celcius
+                resultado = ((temp - 32) * 5) / 9;
+            break;
+        }
+        
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter())
+        {
+         out.println("<h3>Resultado da conversão:</h3> <span>"+ resultado +"</span>");   
+        }
     }
 
     /**

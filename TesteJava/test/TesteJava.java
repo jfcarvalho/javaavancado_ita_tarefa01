@@ -29,6 +29,16 @@ public class TesteJava {
     driver.findElement(By.name("Converter")).click();
     assertEquals(driver.findElement(By.cssSelector("span")).getText(), "212.0");
   }
+  
+   @Test
+  public void testUntitledTestCase2() throws Exception {
+    driver.get("http://localhost:8787/JavaAvancado_01/");
+    driver.findElement(By.name("temp")).clear();
+    driver.findElement(By.name("temp")).sendKeys("212");
+    new Select(driver.findElement(By.name("op"))).selectByVisibleText("Fahrenheit para Celsius");
+    driver.findElement(By.name("Converter")).click();
+    assertEquals(driver.findElement(By.cssSelector("span")).getText(), "100.0");
+  }
 
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {

@@ -1,0 +1,185 @@
+{
+  "id": "1b75665c-5e59-440e-9ae0-6410ac33628b",
+  "version": "1.1",
+  "name": "JavaAvancado_ITA",
+  "url": "http://localhost:8787",
+  "tests": [{
+    "id": "b703a340-8c4a-4d94-8310-d8d2bfbc7f0f",
+    "name": "Celsius para Fahrenheit",
+    "commands": [{
+      "id": "15a0cdf0-a475-4214-b2cb-ed97923a6e9e",
+      "comment": "",
+      "command": "open",
+      "target": "/JavaAvancado_01/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d9d3a3c-f9d7-4f7d-9ec6-968dfc8ba117",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9251dc2c-ee01-4204-a8e8-13a03297cdfa",
+      "comment": "",
+      "command": "click",
+      "target": "name=temp",
+      "targets": [
+        ["name=temp", "name"],
+        ["css=input[name=\"temp\"]", "css"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='temp']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da7f6ceb-b419-410a-a56d-746849da317f",
+      "comment": "",
+      "command": "type",
+      "target": "name=temp",
+      "targets": [
+        ["name=temp", "name"],
+        ["css=input[name=\"temp\"]", "css"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='temp']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "2dc76345-e19f-47cf-9947-bc23eb933c99",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css"],
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4252bf3b-e1a2-472f-9d68-c6399433a365",
+      "comment": "",
+      "command": "click",
+      "target": "name=Converter",
+      "targets": [
+        ["name=Converter", "name"],
+        ["css=input[name=\"Converter\"]", "css"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='Converter']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2e1dce0a-fcfb-4748-a79a-f70bcb547241",
+    "name": "Fahrenheit para Celsius",
+    "commands": [{
+      "id": "09d4c7bc-7e45-414b-889b-94bb39ee4805",
+      "comment": "",
+      "command": "open",
+      "target": "/JavaAvancado_01/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4290c52c-b604-4844-a3a7-23288f68ccda",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2457a7e-9676-48a5-a7f2-f347ebee5072",
+      "comment": "",
+      "command": "click",
+      "target": "name=op",
+      "targets": [
+        ["name=op", "name"],
+        ["css=select[name=\"op\"]", "css"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='op']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "271c4d26-4326-468c-a9c0-952d1cf01b1e",
+      "comment": "",
+      "command": "select",
+      "target": "name=op",
+      "targets": [],
+      "value": "label=Fahrenheit para Celsius"
+    }, {
+      "id": "c72bb18b-e78b-4caf-b9ae-890a082a5494",
+      "comment": "",
+      "command": "click",
+      "target": "css=option[value=\"fc\"]",
+      "targets": [
+        ["css=option[value=\"fc\"]", "css"],
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='fc']", "xpath:attributes"],
+        ["xpath=//option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd7ccc24-a037-4319-9165-d521650c57bd",
+      "comment": "",
+      "command": "click",
+      "target": "name=temp",
+      "targets": [
+        ["name=temp", "name"],
+        ["css=input[name=\"temp\"]", "css"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='temp']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba6ecd2e-f0d9-4a5c-b723-931d9bdbe709",
+      "comment": "",
+      "command": "type",
+      "target": "name=temp",
+      "targets": [
+        ["name=temp", "name"],
+        ["css=input[name=\"temp\"]", "css"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='temp']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "212"
+    }, {
+      "id": "7d095053-482c-493b-a8f4-b3f323776a94",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css"],
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28e34e0e-4c29-4123-8a2e-341bb27f26ab",
+      "comment": "",
+      "command": "click",
+      "target": "name=Converter",
+      "targets": [
+        ["name=Converter", "name"],
+        ["css=input[name=\"Converter\"]", "css"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='Converter']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b2998355-4374-47d0-b2e1-d2f6318423c4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b703a340-8c4a-4d94-8310-d8d2bfbc7f0f"]
+  }],
+  "urls": ["http://localhost:8787/"],
+  "plugins": []
+}
